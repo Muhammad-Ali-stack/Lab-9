@@ -1,0 +1,10 @@
+CREATE DATABASE lab_db;
+USE lab_db;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100) UNIQUE,
+  phone VARCHAR(20),
+  password VARCHAR(100)
+);
